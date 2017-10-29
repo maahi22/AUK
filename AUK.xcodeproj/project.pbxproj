@@ -278,6 +278,7 @@
 				TargetAttributes = {
 					0F0D24FF1FA4D93700F292CC = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6RYRJW337K;
 						ProvisioningStyle = Automatic;
 					};
 					0F0D25161FA4D93700F292CC = {
@@ -589,11 +590,14 @@
 			baseConfigurationReference = 6EF7BDD320CFEAFE1777070C /* Pods-AUK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RYRJW337K;
 				INFOPLIST_FILE = AUK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.AUK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -602,11 +606,14 @@
 			baseConfigurationReference = 01E53E2E9569365786DF1C6B /* Pods-AUK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RYRJW337K;
 				INFOPLIST_FILE = AUK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.AUK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
