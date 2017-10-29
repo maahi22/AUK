@@ -31,6 +31,9 @@
 		0F0D254C1FA51CE800F292CC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D254B1FA51CE800F292CC /* DateHelper.swift */; };
 		0F0D25501FA51D5900F292CC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D254F1FA51D5900F292CC /* NotificationVC.swift */; };
 		0F0D25521FA51DE400F292CC /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D25511FA51DE400F292CC /* MenuVC.swift */; };
+		0F55BCB61FA5C644006C6C11 /* CustomSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55BCB51FA5C644006C6C11 /* CustomSideMenuController.swift */; };
+		0FE7B3FE1FA64BD500CD84BF /* SideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7B3FB1FA64B7D00CD84BF /* SideMenuController.framework */; };
+		0FE7B3FF1FA64BD500CD84BF /* SideMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7B3FB1FA64B7D00CD84BF /* SideMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C36D11EDD46DE4F914CAC5C /* Pods_AUK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4129D90914C52D35608041 /* Pods_AUK.framework */; };
 		ECE62393CB73695E9062E728 /* Pods_AUKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0DD408A335447DC11DA114 /* Pods_AUKTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,7 +46,42 @@
 			remoteGlobalIDString = 0F0D24FF1FA4D93700F292CC;
 			remoteInfo = AUK;
 		};
+		0FE7B3FA1FA64B7D00CD84BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13A757E61D12A2A0004488DA;
+			remoteInfo = SideMenuController;
+		};
+		0FE7B3FC1FA64B7D00CD84BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13A757F01D12A2A0004488DA;
+			remoteInfo = SideMenuControllerTests;
+		};
+		0FE7B4001FA64BD500CD84BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A757E51D12A2A0004488DA;
+			remoteInfo = SideMenuController;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FE7B4021FA64BD500CD84BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0FE7B3FF1FA64BD500CD84BF /* SideMenuController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01E53E2E9569365786DF1C6B /* Pods-AUK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUK.release.xcconfig"; path = "Pods/Target Support Files/Pods-AUK/Pods-AUK.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +113,8 @@
 		0F0D254B1FA51CE800F292CC /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		0F0D254F1FA51D5900F292CC /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		0F0D25511FA51DE400F292CC /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		0F55BCB51FA5C644006C6C11 /* CustomSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuController.swift; sourceTree = "<group>"; };
+		0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SideMenuController.xcodeproj; path = SideMenu/SideMenuController.xcodeproj; sourceTree = "<group>"; };
 		6EF7BDD320CFEAFE1777070C /* Pods-AUK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUK/Pods-AUK.debug.xcconfig"; sourceTree = "<group>"; };
 		8101FBAA9E8DE962183849BD /* Pods-AUKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUKTests/Pods-AUKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		912B4FA0F82EB237B68B9EF2 /* Pods-AUKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AUKTests/Pods-AUKTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE7B3FE1FA64BD500CD84BF /* SideMenuController.framework in Frameworks */,
 				9C36D11EDD46DE4F914CAC5C /* Pods_AUK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +157,7 @@
 		0F0D24F71FA4D93700F292CC = {
 			isa = PBXGroup;
 			children = (
+				0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */,
 				0F0D25021FA4D93700F292CC /* AUK */,
 				0F0D251A1FA4D93700F292CC /* AUKTests */,
 				0F0D25011FA4D93700F292CC /* Products */,
@@ -136,6 +178,8 @@
 		0F0D25021FA4D93700F292CC /* AUK */ = {
 			isa = PBXGroup;
 			children = (
+				0F55BCB41FA5C506006C6C11 /* MyViews */,
+				0F55BCB11FA5C3B7006C6C11 /* Side menu */,
 				0F0D25481FA51CA000F292CC /* Extension */,
 				0F0D25391FA51BB200F292CC /* Helper */,
 				0F0D25321FA4FD1100F292CC /* Cell */,
@@ -213,6 +257,30 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		0F55BCB11FA5C3B7006C6C11 /* Side menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Side menu";
+			sourceTree = "<group>";
+		};
+		0F55BCB41FA5C506006C6C11 /* MyViews */ = {
+			isa = PBXGroup;
+			children = (
+				0F55BCB51FA5C644006C6C11 /* CustomSideMenuController.swift */,
+			);
+			name = MyViews;
+			sourceTree = "<group>";
+		};
+		0FE7B3F61FA64B7D00CD84BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FE7B3FB1FA64B7D00CD84BF /* SideMenuController.framework */,
+				0FE7B3FD1FA64B7D00CD84BF /* SideMenuControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D5F8F430D6664D4027683936 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,10 +303,12 @@
 				0F0D24FE1FA4D93700F292CC /* Resources */,
 				8A929CFC5FB6329D7FB6ACB9 /* [CP] Embed Pods Frameworks */,
 				18A59BC3CF1C2D22991B6106 /* [CP] Copy Pods Resources */,
+				0FE7B4021FA64BD500CD84BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0FE7B4011FA64BD500CD84BF /* PBXTargetDependency */,
 			);
 			name = AUK;
 			productName = AUK;
@@ -299,6 +369,12 @@
 			mainGroup = 0F0D24F71FA4D93700F292CC;
 			productRefGroup = 0F0D25011FA4D93700F292CC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0FE7B3F61FA64B7D00CD84BF /* Products */;
+					ProjectRef = 0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0F0D24FF1FA4D93700F292CC /* AUK */,
@@ -306,6 +382,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0FE7B3FB1FA64B7D00CD84BF /* SideMenuController.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SideMenuController.framework;
+			remoteRef = 0FE7B3FA1FA64B7D00CD84BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0FE7B3FD1FA64B7D00CD84BF /* SideMenuControllerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SideMenuControllerTests.xctest;
+			remoteRef = 0FE7B3FC1FA64B7D00CD84BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0F0D24FE1FA4D93700F292CC /* Resources */ = {
@@ -367,9 +460,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AUK/Pods-AUK-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenuController/SideMenuController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenuController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,6 +545,7 @@
 				0F0D25361FA4FF0100F292CC /* StoryCell.swift in Sources */,
 				0F0D252F1FA4DC5400F292CC /* ContactUs.swift in Sources */,
 				0F0D254C1FA51CE800F292CC /* DateHelper.swift in Sources */,
+				0F55BCB61FA5C644006C6C11 /* CustomSideMenuController.swift in Sources */,
 				0F0D252B1FA4DC3700F292CC /* RegistrationVC.swift in Sources */,
 				0F0D25041FA4D93700F292CC /* AppDelegate.swift in Sources */,
 			);
@@ -469,6 +566,11 @@
 			isa = PBXTargetDependency;
 			target = 0F0D24FF1FA4D93700F292CC /* AUK */;
 			targetProxy = 0F0D25181FA4D93700F292CC /* PBXContainerItemProxy */;
+		};
+		0FE7B4011FA64BD500CD84BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenuController;
+			targetProxy = 0FE7B4001FA64BD500CD84BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -589,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EF7BDD320CFEAFE1777070C /* Pods-AUK.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RYRJW337K;
 				INFOPLIST_FILE = AUK/Info.plist;
@@ -605,6 +708,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01E53E2E9569365786DF1C6B /* Pods-AUK.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6RYRJW337K;
 				INFOPLIST_FILE = AUK/Info.plist;

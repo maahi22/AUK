@@ -7,6 +7,10 @@ target 'AUK' do
 
   # Pods for AUK
 
+#pod 'SideMenuController'
+
+
+
   target 'AUKTests' do
     inherit! :search_paths
     # Pods for testing

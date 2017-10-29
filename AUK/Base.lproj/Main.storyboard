@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9jE-pr-L6d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="abi-dt-F1o">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -28,11 +28,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-124" y="59"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Zih-71-kgy">
             <objects>
-                <viewController id="YlS-co-hnq" customClass="LoginVC" customModule="AUK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="YlS-co-hnq" customClass="LoginVC" customModule="AUK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ARw-Sw-sUC"/>
                         <viewControllerLayoutGuide type="bottom" id="Wj1-K1-w8d"/>
@@ -163,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sg3-8r-Tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="114" y="-233"/>
         </scene>
         <!--Home-->
         <scene sceneID="0dS-b3-NJ2">
@@ -466,11 +467,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="8P9-av-iK3">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="B4L-Cf-qU9">
-                            <connections>
-                                <segue destination="3bY-s9-a7Y" kind="show" id="obL-MF-hZ6"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="bell" id="bcc-4E-mtQ">
                             <connections>
                                 <segue destination="FxZ-O4-Zfh" kind="show" id="dzJ-MN-y8v"/>
@@ -685,7 +681,7 @@
         <!--RegistrationVC-->
         <scene sceneID="UiZ-83-VSh">
             <objects>
-                <viewController id="MG1-4h-jHO" customClass="RegistrationVC" customModule="AUK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationVC" id="MG1-4h-jHO" customClass="RegistrationVC" customModule="AUK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hRw-on-4jr"/>
                         <viewControllerLayoutGuide type="bottom" id="oUK-DQ-OOP"/>
@@ -698,7 +694,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eh1-oU-jQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="659"/>
+            <point key="canvasLocation" x="260" y="784"/>
         </scene>
         <!--MenuVC-->
         <scene sceneID="vxZ-qt-gRH">
@@ -793,7 +789,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4s-gR-No3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736.8" y="644.52773613193403"/>
+            <point key="canvasLocation" x="1292" y="851"/>
+        </scene>
+        <!--Custom Side Menu Controller-->
+        <scene sceneID="mSJ-H3-gi8">
+            <objects>
+                <viewController id="abi-dt-F1o" customClass="CustomSideMenuController" customModule="AUK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qAx-BM-HlH"/>
+                        <viewControllerLayoutGuide type="bottom" id="stf-Yd-vOs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5TR-Nr-BCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <segue destination="9jE-pr-L6d" kind="custom" identifier="toHomeVC" customClass="CenterContainmentSegue" customModule="SideMenuController" id="uCU-b9-057"/>
+                        <segue destination="3bY-s9-a7Y" kind="custom" identifier="containSideMenu" customClass="SideContainmentSegue" customModule="SideMenuController" id="fY5-le-IZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGm-8b-wOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="24"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bG6-PG-kAr">
@@ -801,7 +819,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9jE-pr-L6d" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ylu-Bc-dR6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -822,7 +840,6 @@
         <image name="Placeholder" width="78" height="74"/>
         <image name="bell" width="40" height="40"/>
         <image name="landscapeImagePlaceholder" width="318" height="178"/>
-        <image name="menu" width="23" height="32"/>
         <image name="share" width="25" height="25"/>
     </resources>
 </document>
