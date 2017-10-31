@@ -13,7 +13,7 @@ class MenuVC: UIViewController {
     
     @IBOutlet weak var tblViewMenu: UITableView!
     
-    var menuItemArray = [["icon":"iconHome","Text":"Home"],["icon":"iconWeather","Text":"My Profile"],["icon":"IconCurrency","Text":"History"],["icon":"IconEmergencyContact","Text":"Settings"],["icon":"IconLanguage","Text":"Favorites"],["icon":"IconLanguage","Text":"Logout"]]
+    var menuItemArray = [["icon":"iconHome","Text":"Home"],["icon":"myprofile","Text":"My Profile"],["icon":"IconCurrency","Text":"History"],["icon":"Settings","Text":"Settings"],["icon":"IconStar","Text":"Favorites"],["icon":"logout","Text":"Logout"]]
     
 
     
@@ -75,7 +75,7 @@ extension MenuVC: UITableViewDelegate,UITableViewDataSource{
             if let imgeName = dict ["icon"] {
                 let img = imgeName
                 cell.imageView?.image = UIImage(named: img)?.withRenderingMode(.alwaysTemplate)
-                
+                cell.imageView?.tintColor = .lightGray
             }
             
             
@@ -91,6 +91,31 @@ extension MenuVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let dict = menuItemArray[indexPath.row]
+        let text = dict ["Text"]
+        
+        if text == "Logout"  {
+            self.app_logout()
+            
+        }else if text == "Log In"{
+            
+            let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let ViewController = mainStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            let navController = UINavigationController(rootViewController: ViewController)
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = navController
+        }else if text == "My Profile" {
+            sideMenuController?.performSegue(withIdentifier: "showMyprofile", sender: nil)
+        }else if text == "History" {
+            sideMenuController?.performSegue(withIdentifier: "showHistory", sender: nil)
+        }else if text == "Settings" {
+            sideMenuController?.performSegue(withIdentifier: "showSetting", sender: nil)
+        }else if text == "Favorites" {
+            sideMenuController?.performSegue(withIdentifier: "showFavorites", sender: nil)
+        }else if text == "Home" {
+            sideMenuController?.performSegue(withIdentifier: "toHomeVC", sender: nil)
+        }
+        
         
     }
     
@@ -103,6 +128,31 @@ extension MenuVC: UITableViewDelegate,UITableViewDataSource{
     //Logout MyDunia
     func app_logout()  {
         
+        let alertController = UIAlertController(title: "Logout!", message: "Are you sure", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+            
+            
+           /* FilesMethods.deleteImageDocumentDirectory("ProfilePic")
+            
+            UserDefaults.standard.removeObject(forKey: MyDuniaUserDetails)*/
+            let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let ViewController = mainStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            let navController = UINavigationController(rootViewController: ViewController)
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = navController
+            
+            
+        }
+        
+        let NoAction = UIAlertAction(title: "No", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
+            
+            
+            
+        }
+        alertController.addAction(yesAction)
+        alertController.addAction(NoAction)
+        self.present(alertController, animated: true, completion: nil)
         
         
     }

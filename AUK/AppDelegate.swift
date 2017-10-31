@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
        
-       /* if let data = UserDefaults.standard.data(forKey: UserDetails),
+        /*if let data = UserDefaults.standard.data(forKey: UserDetails),
             let _ = NSKeyedUnarchiver.unarchiveObject(with: data) as? User {
             
             print("Already Loged in")
         } else {*/
-            /*let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             let ViewController = mainStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
             let navController = UINavigationController(rootViewController: ViewController)
     
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            appDelegate.window?.rootViewController = navController*/
+            appDelegate.window?.rootViewController = navController
        // }
         
         

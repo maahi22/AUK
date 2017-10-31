@@ -31,6 +31,11 @@
 		0F0D254C1FA51CE800F292CC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D254B1FA51CE800F292CC /* DateHelper.swift */; };
 		0F0D25501FA51D5900F292CC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D254F1FA51D5900F292CC /* NotificationVC.swift */; };
 		0F0D25521FA51DE400F292CC /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D25511FA51DE400F292CC /* MenuVC.swift */; };
+		0F1D44831FA8D63700F66BB0 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D44821FA8D63700F66BB0 /* MyProfileVC.swift */; };
+		0F1D44851FA8D64A00F66BB0 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D44841FA8D64A00F66BB0 /* EditProfile.swift */; };
+		0F1D44871FA8D65900F66BB0 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D44861FA8D65900F66BB0 /* SettingsVC.swift */; };
+		0F1D44891FA8D66900F66BB0 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D44881FA8D66900F66BB0 /* FavoriteVC.swift */; };
+		0F1D448B1FA8D67B00F66BB0 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D448A1FA8D67B00F66BB0 /* HistoryVC.swift */; };
 		0F55BCB61FA5C644006C6C11 /* CustomSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55BCB51FA5C644006C6C11 /* CustomSideMenuController.swift */; };
 		0FE7B3FE1FA64BD500CD84BF /* SideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7B3FB1FA64B7D00CD84BF /* SideMenuController.framework */; };
 		0FE7B3FF1FA64BD500CD84BF /* SideMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE7B3FB1FA64B7D00CD84BF /* SideMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,6 +118,11 @@
 		0F0D254B1FA51CE800F292CC /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		0F0D254F1FA51D5900F292CC /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		0F0D25511FA51DE400F292CC /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		0F1D44821FA8D63700F66BB0 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		0F1D44841FA8D64A00F66BB0 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		0F1D44861FA8D65900F66BB0 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		0F1D44881FA8D66900F66BB0 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		0F1D448A1FA8D67B00F66BB0 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		0F55BCB51FA5C644006C6C11 /* CustomSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuController.swift; sourceTree = "<group>"; };
 		0FE7B3F51FA64B7D00CD84BF /* SideMenuController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SideMenuController.xcodeproj; path = SideMenu/SideMenuController.xcodeproj; sourceTree = "<group>"; };
 		6EF7BDD320CFEAFE1777070C /* Pods-AUK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUK/Pods-AUK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +188,7 @@
 		0F0D25021FA4D93700F292CC /* AUK */ = {
 			isa = PBXGroup;
 			children = (
+				0F1D44801FA8D61700F66BB0 /* MenuItems */,
 				0F55BCB41FA5C506006C6C11 /* MyViews */,
 				0F55BCB11FA5C3B7006C6C11 /* Side menu */,
 				0F0D25481FA51CA000F292CC /* Extension */,
@@ -255,6 +266,18 @@
 				0F0D25491FA51CB600F292CC /* TextField.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		0F1D44801FA8D61700F66BB0 /* MenuItems */ = {
+			isa = PBXGroup;
+			children = (
+				0F1D44821FA8D63700F66BB0 /* MyProfileVC.swift */,
+				0F1D44841FA8D64A00F66BB0 /* EditProfile.swift */,
+				0F1D44861FA8D65900F66BB0 /* SettingsVC.swift */,
+				0F1D44881FA8D66900F66BB0 /* FavoriteVC.swift */,
+				0F1D448A1FA8D67B00F66BB0 /* HistoryVC.swift */,
+			);
+			path = MenuItems;
 			sourceTree = "<group>";
 		};
 		0F55BCB11FA5C3B7006C6C11 /* Side menu */ = {
@@ -531,18 +554,23 @@
 				0F0D253F1FA51BF800F292CC /* ConnectionHelper.swift in Sources */,
 				0F0D25411FA51C0D00F292CC /* CommonMethods.swift in Sources */,
 				0F0D25381FA50F1B00F292CC /* StoryDetailsVC.swift in Sources */,
+				0F1D44891FA8D66900F66BB0 /* FavoriteVC.swift in Sources */,
 				0F0D25451FA51C3400F292CC /* Validations.swift in Sources */,
+				0F1D44871FA8D65900F66BB0 /* SettingsVC.swift in Sources */,
 				0F0D25501FA51D5900F292CC /* NotificationVC.swift in Sources */,
 				0F0D250C1FA4D93700F292CC /* AUK.xcdatamodeld in Sources */,
 				0F0D254A1FA51CB600F292CC /* TextField.swift in Sources */,
 				0F0D25291FA4DC2500F292CC /* LoginVC.swift in Sources */,
+				0F1D448B1FA8D67B00F66BB0 /* HistoryVC.swift in Sources */,
 				0F0D25521FA51DE400F292CC /* MenuVC.swift in Sources */,
+				0F1D44831FA8D63700F66BB0 /* MyProfileVC.swift in Sources */,
 				0F0D25311FA4DC6100F292CC /* AboutUs.swift in Sources */,
 				0F0D25431FA51C1900F292CC /* Constant.swift in Sources */,
 				0F0D25471FA51C5E00F292CC /* UIColor+AUKColor.swift in Sources */,
 				0F0D252D1FA4DC4600F292CC /* HomeVC.swift in Sources */,
 				0F0D253D1FA51BE300F292CC /* DBHelper.swift in Sources */,
 				0F0D25361FA4FF0100F292CC /* StoryCell.swift in Sources */,
+				0F1D44851FA8D64A00F66BB0 /* EditProfile.swift in Sources */,
 				0F0D252F1FA4DC5400F292CC /* ContactUs.swift in Sources */,
 				0F0D254C1FA51CE800F292CC /* DateHelper.swift in Sources */,
 				0F55BCB61FA5C644006C6C11 /* CustomSideMenuController.swift in Sources */,

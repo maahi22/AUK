@@ -1,14 +1,14 @@
 //
-//  LoginVC.swift
+//  SettingsVC.swift
 //  AUK
 //
-//  Created by Maahi on 28/10/17.
+//  Created by Maahi on 31/10/17.
 //  Copyright © 2017 KTechnology. All rights reserved.
 //
 
 import UIKit
 
-class LoginVC: UIViewController {
+class SettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,30 +31,5 @@ class LoginVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
-    
-    
-    
-    @IBAction func loginPressed(_ sender: Any) {
-
-        DispatchQueue.main.async(execute: {  () -> Void  in
-            //self.activityIndicator.stopAnimating()
-            self.performSegue(withIdentifier: "toHomeView", sender: self)
-        })
-    }
-    
-    
-    
-    @IBAction func SignUpClicked(_ sender: Any) {
-        
-        DispatchQueue.main.async(execute: {  () -> Void  in
-            //self.activityIndicator.stopAnimating()
-            self.performSegue(withIdentifier: "tosignUp", sender: self)
-        })
-        
-        
-    }
-    
 
 }
